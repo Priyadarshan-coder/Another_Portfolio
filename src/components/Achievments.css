@@ -23,7 +23,12 @@
     max-width: 600px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.container-elems {
+    margin: 2rem 0; /* Spacing */
+    opacity: 0; /* Initially hidden for the animation */
+    transition: opacity 0.3s ease; /* Smooth transition when appearing */
+  }
+  
 /* Hover effect */
 .container-elems:hover {
     transform: translateY(-10px) scale(1.02);
@@ -90,6 +95,14 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 450px) {
+    .achiev-top h2 {
+        font-size: 1.2rem;
+    }
+    .extra{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     .achievment-header h4 {
         font-size: 2rem;
