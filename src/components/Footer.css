@@ -1,0 +1,14 @@
+.footer-container h2{
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.525)
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:768px) {
+    .footer-container h2{
+      font-size: 1rem;
+    }
+    
+  }

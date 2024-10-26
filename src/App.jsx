@@ -20,6 +20,7 @@ function App() {
     <Projects/>
     <Achievments/>
     <ContactMe/>
+    <Footer />
     </>
   )
 }

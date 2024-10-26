@@ -1,11 +1,13 @@
 .contact-container {
-    position: absolute;
+    
     left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center */
+  /* Adjust to center */
     width: 40vw;
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem; /* Space between cards */
   }
   
@@ -22,7 +24,9 @@
     transform: scale(1.05); /* Slightly enlarge the card on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
   }
-  
+  .contact-elems h1{
+   font-size: 1.5rem; 
+  }
   .contact-elems {
     display: flex;
     align-items: center; /* Aligns items vertically */
@@ -38,4 +42,9 @@
   .contact-elems h1 a:hover {
     color: #0073e6; /* Change color on hover */
   }
-  
+  @media (max-width:768px) {
+    .contact-container{
+      width:80vw;
+    }
+    
+  }
