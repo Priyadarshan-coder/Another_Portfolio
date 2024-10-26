@@ -8,10 +8,24 @@
 }
 
 .about-left, .about-right {
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.305);
     border-radius: 20px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+.about-left {
+    height: 25vw; /* Maintain height */
+    width: 25vw; /* Maintain width */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden; /* Hide overflow */
+}
+
+.about-left img {
+    width: 100%; /* Make the image responsive */
+    height: 100%; /* Keep aspect ratio */
+    object-fit: cover; /* Cover the entire area without distortion */
 }
 
 .about-left {
@@ -35,7 +49,7 @@
 .about-text {
     width: 60vw;
     height: auto;
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.289);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     padding: 1.5vw;

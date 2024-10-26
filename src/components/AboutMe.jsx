@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './AboutMe.css';
-
+import Personal from '../assets/personal.jpeg'
 // Import Font Awesome icons (if using Font Awesome)
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
@@ -47,7 +47,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="about-container">
-        <div className="about-left"></div>
+        <div className="about-left"><img src={Personal} alt="profile" /></div>
         <div className="about-right">
           <div className="education">
             {/* Education Section with Graduation Icon */}
