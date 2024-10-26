@@ -1,0 +1,108 @@
+/* Styling for the main achievement header */
+.achievment-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.achievment-header h4 {
+    color: rgba(0, 0, 0, 0.493);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.achievment-header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+/* Styling for the main achievement container */
+.achievment-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+/* Card styling for each achievement */
+.container-elems {
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Styling for the top section with links and title */
+.achiev-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.achiev-top h2 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.achiev-top a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.achiev-top a:hover {
+    text-decoration: underline;
+}
+
+/* General styling for the card text */
+.container-elems h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.container-elems h2 {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .achievment-header h4 {
+        font-size: 2rem;
+    }
+
+    .achievment-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .container-elems {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievment-header h4 {
+        font-size: 1.8rem;
+    }
+
+    .achievment-header h1 {
+        font-size: 2rem;
+    }
+
+    .achiev-top h2 {
+        font-size: 1.2rem;
+    }
+
+    .container-elems h3 {
+        font-size: 1rem;
+    }
+}

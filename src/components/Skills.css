@@ -1,0 +1,83 @@
+.skills-header h4 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.skills-header h1 {
+    font-size: 2.8rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    margin: 6vw 2vw;
+}
+
+/* Styling for frontend and backend sections */
+.frontend, .backend {
+    border: 2px solid black; /* Add border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    width: 45%; /* Set width to control layout */
+    background-color: white; /* Set background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.frontend:hover, .backend:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Align and style each skill */
+.skill {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin: 10px 0; /* Space between skill items */
+}
+
+.skill h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    margin-left: 10px; /* Space between icon and text */
+}
+
+/* Increase the icon size */
+.skill svg {
+    font-size: 2.5rem; /* Adjust the size of the icons */
+    width: 2.5rem; /* Set width */
+    height: 2.5rem; /* Set height */
+}
+
+.frontend h3, .backend h3 {
+    font-size: 2.5rem;
+}
+
+/* Frontend skill section */
+.front-skills {
+    display: flex;
+    flex-direction: column; /* Stack skills vertically */
+    gap: 15px; /* Space between skills */
+}
+
+/* Backend skill section */
+.back-skills {
+    display: flex;
+    flex-direction: column; /* Stack skills vertically */
+    gap: 15px; /* Space between skills */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .frontend, .backend {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Space between sections */
+    }
+}

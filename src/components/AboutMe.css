@@ -1,0 +1,166 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow: hidden; /* Add this line */
+}
+
+.about-left, .about-right {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+.about-left {
+    height: 25vw;
+    width: 25vw;
+}
+
+.about-right {
+    height: 30vw;
+    width: 45vw;
+    padding: 1.5vw;
+    padding-top: 3vw;
+}
+
+/* Hover effect for containers */
+.about-left:hover, .about-right:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.about-text {
+    width: 60vw;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5vw;
+    margin: 2rem auto;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transition */
+}
+
+/* Hover effect for the text container */
+.about-text:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.education h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.education h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.info-row {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.bit-bold {
+    font-weight: 700;
+}
+
+ul {
+    padding: 1vw;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1300px) {
+    .about-right {
+        height: 40vh;
+        width: 60vw;
+    }
+    .about-left {
+        width: 20vw;
+        height: 20vw;
+    }
+    .about-text {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2vw;
+    }
+
+    .about-left {
+        width: 35vw; /* Increased width slightly for better readability */
+        height: 20vh;
+    }
+    .about-right {
+        width: 90vw;
+        height: auto;
+    }
+    .about-text {
+        width: 90vw;
+    }
+
+    .education h2,
+    .education h1 {
+        font-size: 1.3rem; /* Adjusted for better readability */
+    }
+
+    ul {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .education h2,
+    .education h1 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .about-left {
+        width: 45vw; /* Further adjust for smaller screens */
+        height: 25vh;
+    }
+
+    .about-text {
+        width: 95vw;
+    }
+
+    ul {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-right {
+        padding: 0 1rem;
+    }
+
+    .education h2,
+    .education h1 {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        padding: 1rem;
+    }
+}
+
+.education-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem; 
+}
+  
+.graduation-icon {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,158 @@
+.intro-container{
+    padding: 5rem;
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.left {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    
+    overflow: hidden; /* Ensures the image fits within the circular container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+.left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(130, 121, 121, 0.54); /* Grey overlay */
+    border-radius: 50%;
+    pointer-events: none; /* Allows interactions to pass through to the image */
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+.contact-buttons{
+    width:30rem;
+    display: flex;
+    gap:8px;
+    cursor: pointer;
+    margin-top: 2vw;
+    justify-content: space-between;
+    
+}
+.contact-icons{
+    padding:0 2vw;
+    width:30rem;
+    display: flex;
+    justify-content: space-between;
+    gap:8px;
+    margin-top: 2vw;
+}
+.contact-buttons h3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.bold-text h2{
+    font-weight: 700;
+    font-size: 100px;
+}
+h2{
+    font-size: 40px;
+    line-height:40px;
+}
+.bold-text {
+    font-weight: 700; /* Bold text */
+    font-size: 50px;
+    margin:0.5rem 0;
+}
+
+.light-text {
+    font-weight: 700; /* Light text, try 100 if you want even lighter */
+    color: rgba(0, 0, 0, 0.549);
+    font-size: 40px;
+    line-height: 40px;
+}
+.contact-buttons h3{
+    padding:1vw;
+    border-radius: 40px;
+    border: 1px solid rgba(76, 73, 73, 0.833);
+    position: relative;
+    overflow: hidden;
+}
+.contact-buttons h3::after{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgb(107,105,101);
+    position: absolute;
+    left: 0;
+    bottom:-100%;
+    border-radius: 50px;
+}
+.contact-buttons h3:hover::after{
+    bottom:0%;
+    color: #ffff;
+    transition: all ease 0.4s;
+    
+}
+.contact-buttons h3 a{
+    color: rgba(91, 87, 87, 0.647);
+    text-decoration: none;
+    position: relative;
+    z-index: 99;
+}
+.contact-buttons h3:hover a{
+    color:white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.know-more{
+    width:100%;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.know-more h3{
+    font-size: 40px;
+
+}
+
+.light-know h3{
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.482);
+}
+@media (max-width: 1200px) {
+    .intro-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:8vw;
+    }
+}
+@media (max-width: 600px)
+  {
+    .contact-buttons{
+        width:20rem;
+        padding: 0 0.5rem;
+    }
+    
+    .contact-icons{
+        width:20rem;
+        padding: 0 0.5rem;
+    }
+  }

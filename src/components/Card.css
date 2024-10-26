@@ -1,0 +1,127 @@
+/* Base styling for the card */
+.card {
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(184, 177, 177, 0.252);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive styling for the image */
+.card img {
+    width: 100%; /* Scale image to container */
+    max-width: 400px; /* Maximum width to maintain quality */
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Text styling */
+.card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.links h3 {
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links h3 a {
+    text-decoration: none;
+    color: rgba(91, 87, 87, 0.7);
+}
+
+.links h3:hover {
+    background-color: rgb(107, 105, 101);
+    color: #fff;
+}
+
+.links h3:hover a {
+    color: #fff;
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-pagination-bullet-active {
+    background: black;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet screen adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .card img {
+        max-width: 300px;
+    }
+
+    .links h3 {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .card img {
+        max-width: 250px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .links h3 {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
