@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Achievments.css'
 const Achievments = () => {
   return (
     <>
