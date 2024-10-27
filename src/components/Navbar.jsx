@@ -23,7 +23,7 @@ const Navbar = () => {
         {menuOpen ? (
           <RxCross2 onClick={toggleMenu} style={{ fontSize: '3rem', width: '40px', height: '60px' }} />
         ) : (
-          <RxHamburgerMenu onClick={toggleMenu} style={{ fontSize: '3rem', width: '40px', height: '60px' }} />
+          <RxHamburgerMenu onClick={toggleMenu} style={{ fontSize: '1rem', width: '30px', height: '50px' }} />
         )}
       </div>
     </div>
