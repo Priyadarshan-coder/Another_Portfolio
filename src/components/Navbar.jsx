@@ -11,13 +11,13 @@ const Navbar = () => {
 
   return (
     <div className="container">
-      <h1>Priyadarshan Ghosh Hazra</h1>
+      <h1 style={{color:'rgba(0, 0, 0, 0.493)'}}>Priyadarshan Ghosh Hazra</h1>
       <div className={`elems ${menuOpen ? 'show' : 'hide'}`}>
         <h2><a href="#about">About</a></h2>
         <h2><a href="#achievements">Achievements</a></h2>
         <h2><a href="#skills">Skills</a></h2>
         <h2><a href="#projects">Projects</a></h2>
-        <h2><a href="#education">Education</a></h2>
+        <h2><a href="#contact">Contact</a></h2>
       </div>
       <div className="hamburger" >
         {menuOpen ? (

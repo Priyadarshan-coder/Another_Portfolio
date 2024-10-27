@@ -15,11 +15,11 @@ function App() {
     <>
     <Navbar/>
     <Intro />
-    <AboutMe/>
-    <Skills/>
-    <Projects/>
-    <Achievments/>
-    <ContactMe/>
+    <AboutMe id="about"/>
+    <Skills id="skills"/>
+    <Projects id="projects"/>
+    <Achievments id="achievments"/>
+    <ContactMe id="cobtact"/>
     <Footer />
     </>
   )

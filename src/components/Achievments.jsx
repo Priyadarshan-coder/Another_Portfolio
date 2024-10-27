@@ -38,7 +38,7 @@ const Achievments = () => {
 
   return (
     <>
-      <div className="achievment-header" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="achievment-header" style={{ marginTop:'15vh', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <h4 style={{ color: 'rgba(0, 0, 0, 0.493)', fontSize: '2.5rem' }}>Some of my</h4>
         <h1 style={{ fontSize: '2.8rem' }}>Achievments</h1>
       </div>
@@ -64,7 +64,7 @@ const Achievments = () => {
             <h2><a href="#">Smart India Hackathon</a></h2>
             <h2 className="extra">Problem Statement Solution</h2>
           </div>
-          <h3>Competed against 130 other teams to secure a top 30 position from intra-school hackathon.</h3>
+          <h3>Competed against 130 other teams to secure rank under top 30 positions from intra-school hackathon working on our project CareerCompass.</h3>
           <h2>Oct 2023</h2>
         </div>
       </div>

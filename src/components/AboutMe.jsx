@@ -78,7 +78,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="about-text">
-        I am an Electrical Engineering UnderGrad Student at Heritage Institute Of Technology, Currently at final year. I love problem-solving and coding. I always love to do things which I am passionate about. I have worked on technologies like React, PostGreSql, MySQL, MongoDB, Prisma, NodeJs, Redis, Kafka, HTML5, CSS, Java, and C during my bachelor's. I have made some web apps using the mentioned technologies to solve real-world problems during my undergrad which has helped me in gaining experience in these technologies. I am passionate about developing complex applications that solve real-world problems impacting millions of users.
+        I am an Electrical Engineering Graduate Student at Heritage Institute Of Technology, Currently at final year. I love problem-solving and coding. I always love to do things which I am passionate about. I have worked on technologies like React, PostGreSql, MySQL, MongoDB, Prisma, NodeJs, Redis, Kafka, HTML5, CSS, Java, and C during my bachelor's. I have made some web apps using the mentioned technologies to solve real-world problems during my undergrad which has helped me in gaining experience in these technologies. I am passionate about developing complex applications that solve real-world problems impacting millions of users.
       </div>
     </>
   );

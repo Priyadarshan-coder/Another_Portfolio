@@ -46,8 +46,8 @@ const Intro = () => {
           ))}
         </h2>
         <div className='contact-buttons'>
-          <h3><a href="">Download Cv</a></h3>
-          <h3><a href="">Contact Info</a></h3>
+          <h3><a href="https://drive.google.com/file/d/10bnCco6l72fXN2TkXFvC3vzOkQ6WK8Sq/view?usp=drivesdk.Hope">Download Cv</a></h3>
+          <h3><a href="#">Contact Info</a></h3>
         </div>
         <div className='contact-icons'>
           <a href="https://github.com/Priyadarshan-coder"><FaGithub style={{ fontSize: '2rem', color: 'black' }} /></a>

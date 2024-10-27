@@ -44,7 +44,7 @@ const Projects = () => {
         },
         {
             img: Assessment,
-            title: 'Personalised Assessment Dashboard',
+            title: 'Assessment Dashboard',
             git: 'https://github.com/Priyadarshan-coder/PersonalisedAssessmentDashboard',
             live: 'https://github.com/Priyadarshan-coder/PersonalisedAssessmentDashboard',
         },
